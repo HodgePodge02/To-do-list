@@ -35,7 +35,7 @@ function clearList() {
 }
 
 function addItem(item) {
-  if (item) {
+  if (item.trim()) {
     toDo.push(item);
   }
 }
@@ -49,7 +49,7 @@ function generateList() {
         <li> ${item} </li>
         <button>delete</button>
     `;
-    liWrapper.addEventListener("click", () => {
+    liWrapper.addEventListener("click", (e) => {
       deleteItem(i);
     });
     toDoList.appendChild(liWrapper);
