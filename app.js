@@ -67,8 +67,8 @@ function generateList() {
     });
 
     //delete button
-    const deleteButton = document.createElement("div");
-    deleteButton.innerHTML = `<button>delete</button>`;
+    const deleteButton = document.createElement("button");
+    deleteButton.innerText = `delete`;
     deleteButton.addEventListener("click", (e) => {
       deleteItem(i);
     });
