@@ -33,7 +33,7 @@ function clearList() {
   toDoList.innerHTML = "";
 }
 
-function addItem(item) {
+function addItem([item]) {
   if (item.trim()) {
     toDo.push({ name: item, completed: false });
     console.log(toDo);
